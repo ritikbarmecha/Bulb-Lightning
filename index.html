@@ -34,7 +34,7 @@ button{
 </head>
 <body class="cse">
 <div class="container">
-    <img  id="bti" src="./img1.png" alt="">
+    <img  id="bti" src="images/img2.png" alt="">
     <button id="btm" > Turn On</button>
 </div>
     
@@ -45,11 +45,11 @@ let b=document.getElementById('btm')
  b.addEventListener('click',callme)
 function callme(e){
     if(b.textContent.includes('On')){
-    a.src="./img1.png"
+    a.src="images/img1.png"
     b.textContent="Turn Off"
     
     }else{
-    a.src="./img2.png"
+    a.src="images/img2.png"
     b.textContent="Turn On"
     }
 }
