@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" cont
+    
+    ent="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+.cse{
+    background-color:black ;
+}
+.container{
+    border: 10 px solid yellow;
+    display: flex;
+    flex-direction: column;
+     align-items: center;
+   
+}
+img{
+   width: 40%;
+   border-radius: 50%;
+   background: none;
+}
+button{
+    margin: 20px;
+    padding: 15px;
+    border-radius: 10px;
+    font-weight: 900;
+    font-size: large;
+}
+    </style>
+</head>
+<body class="cse">
+<div class="container">
+    <img  id="bti" src="./img1.png" alt="">
+    <button id="btm" > Turn On</button>
+</div>
+    
+    <script>
+let a=document.getElementById('bti')
+let b=document.getElementById('btm')
+
+ b.addEventListener('click',callme)
+function callme(e){
+    if(b.textContent.includes('On')){
+    a.src="./img1.png"
+    b.textContent="Turn Off"
+    
+    }else{
+    a.src="./img2.png"
+    b.textContent="Turn On"
+    }
+}
+    </script>
+</body>
+</html>
